@@ -1,0 +1,23 @@
+<classpath>
+  <classpathentry output="target/scala-2.9.1/classes" path="src/main/scala" kind="src"></classpathentry>
+  <classpathentry output="target/scala-2.9.1/classes" path="src/main/java" kind="src"></classpathentry>
+  <classpathentry output="target/scala-2.9.1/test-classes" path="src/test/scala" kind="src"></classpathentry>
+  <classpathentry output="target/scala-2.9.1/test-classes" path="src/test/java" kind="src"></classpathentry>
+  <classpathentry kind="con" path="org.scala-ide.sdt.launching.SCALA_CONTAINER"></classpathentry>
+  <classpathentry path="/home/virtual/.ivy2/cache/se.scalablesolutions.akka/akka-actor/jars/akka-actor-1.3.1.jar" kind="lib"></classpathentry>
+  <classpathentry path="/home/virtual/.ivy2/cache/cc.spray/spray-server/jars/spray-server-0.9.0.jar" kind="lib"></classpathentry>
+  <classpathentry path="/home/virtual/.ivy2/cache/cc.spray/spray-base/jars/spray-base-0.9.0.jar" kind="lib"></classpathentry>
+  <classpathentry path="/home/virtual/.ivy2/cache/org.parboiled/parboiled-scala/jars/parboiled-scala-1.0.2.jar" kind="lib"></classpathentry>
+  <classpathentry path="/home/virtual/.ivy2/cache/org.parboiled/parboiled-core/jars/parboiled-core-1.0.2.jar" kind="lib"></classpathentry>
+  <classpathentry path="/home/virtual/.ivy2/cache/org.jvnet/mimepull/jars/mimepull-1.6.jar" kind="lib"></classpathentry>
+  <classpathentry path="/home/virtual/.ivy2/cache/com.googlecode.concurrentlinkedhashmap/concurrentlinkedhashmap-lru/jars/concurrentlinkedhashmap-lru-1.2.jar" kind="lib"></classpathentry>
+  <classpathentry path="/home/virtual/.ivy2/cache/cc.spray/spray-json_2.9.1/jars/spray-json_2.9.1-1.1.1.jar" kind="lib"></classpathentry>
+  <classpathentry path="/home/virtual/.ivy2/cache/se.scalablesolutions.akka/akka-slf4j/jars/akka-slf4j-1.3.1.jar" kind="lib"></classpathentry>
+  <classpathentry path="/home/virtual/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.6.4.jar" kind="lib"></classpathentry>
+  <classpathentry path="/home/virtual/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.0.0.jar" kind="lib"></classpathentry>
+  <classpathentry path="/home/virtual/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.0.0.jar" kind="lib"></classpathentry>
+  <classpathentry path="/home/virtual/.ivy2/cache/org.specs2/specs2_2.9.1/jars/specs2_2.9.1-1.9.jar" kind="lib"></classpathentry>
+  <classpathentry path="/home/virtual/.ivy2/cache/org.specs2/specs2-scalaz-core_2.9.1/jars/specs2-scalaz-core_2.9.1-6.0.1.jar" kind="lib"></classpathentry>
+  <classpathentry path="org.eclipse.jdt.launching.JRE_CONTAINER" kind="con"></classpathentry>
+  <classpathentry path="bin" kind="output"></classpathentry>
+</classpath>

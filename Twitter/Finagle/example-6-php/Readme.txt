@@ -1,0 +1,88 @@
+Configuration
+=============
+
+git clone https://github.com/mariusaeriksen/thrift-0.5.0-finagle.git
+
+cd thrift-0.5.0-finagle.git
+
+./configure --with-boost=$HOME/usr --prefix=$HOME/usr JAVAC=$JAVA_HOME/bin/javac JAVA=$JAVA_HOME/bin/java
+
+sudo make
+
+sudo make install
+
+THRIFT_HOME=${HOME}/Software/Thrift/thrift-0.5.0-finagle
+
+sudo cp ${THRIFT_HOME}/lib/php/src/ext/thrift_protocol/modules/thrift_protocol.so /usr/lib/php5/20090626+lfs/
+
+sudo cp ${THRIFT_HOME}/lib/php/thrift_protocol.ini /etc/php5/conf.d/
+
+sudo /etc/init.d/lighttpd stop
+
+sudo /etc/init.d/lighttpd start
+
+
+Compiling proxy
+===============
+
+./thrift --gen php:oop: ~/Development/Shared/sandbox/Functional/Scala/Finagle/example-5-ostrich/src/main/thrift/MyService.thrift
+
+
+Demo
+====
+
+Start Server (thrift + finagle)
+-------------------------------
+
+  $ cd example-5-ostrich
+
+  $ sbt
+
+  compile
+
+  run -f config/development.scala
+
+
+View Php
+--------
+
+http://localhost/thrift-example/example-put.php
+
+http://localhost/thrift-example/example-get.php
+
+
+Use Client
+----------
+
+  $ sbt
+
+  console
+
+  import org.sandbox.myservice.SimpleClient
+  val cli = new SimpleClient
+  cli.myPut("hello", "world")
+
+  cli.myGet("hello")
+  
+  cli.myGetAsync("hello") onSuccess {resp => println("Response: " + resp)}
+
+
+Admin interface (ostrich)
+-------------------------
+
+  curl http://localhost:9900/stats
+  curl http://localhost:9900/stats.txt
+
+  curl http://localhost:9900/ping
+
+  curl http://localhost:9900/shutdown
+
+  curl http://localhost:9900/quiesce
+
+  curl http://localhost:9900/server_info
+
+  curl http://localhost:9900/threads
+
+  curl http://localhost:9900/gc
+
+  In browser: http://localhost:9900/graph/

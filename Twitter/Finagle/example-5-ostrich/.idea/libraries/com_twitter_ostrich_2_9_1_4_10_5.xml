@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="com.twitter_ostrich_2.9.1_4.10.5">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/com.twitter/ostrich_2.9.1/jars/ostrich_2.9.1-4.10.5.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.ivy2/cache/com.twitter/ostrich_2.9.1/docs/ostrich_2.9.1-4.10.5-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/com.twitter/ostrich_2.9.1/srcs/ostrich_2.9.1-4.10.5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

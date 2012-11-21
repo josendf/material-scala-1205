@@ -1,0 +1,9 @@
+project/project
+project/target
+target
+tmp
+logs
+.history
+.cache
+.settings
+
